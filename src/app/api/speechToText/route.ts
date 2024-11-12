@@ -17,7 +17,7 @@ export async function POST(req: Request) {
 
   // define the path to store temporary waf file
   // we generate randomUUID to prevent errors when two or more requests are processing simultaneously
-  const filePath = `tmp/input${crypto.randomUUID}.wav`;
+  const filePath = `tmp/input${crypto.randomUUID()}.wav`;
 
   try {
     // write the audio to a temporary wav file synchronously
