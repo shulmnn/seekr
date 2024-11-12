@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { env } from "~/env";
-import fs, { read } from "fs";
+import fs from "fs";
 import { NextResponse } from "next/server";
 
 const openai = new OpenAI({
